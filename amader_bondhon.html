@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>আমাদের বন্ধন</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f2f5;
+    }
+    header {
+      background-color: #1877f2;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #1877f2;
+      font-weight: bold;
+    }
+    .content {
+      max-width: 960px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      height: 120px;
+      object-fit: cover;
+    }
+    form {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    button {
+      background-color: #1877f2;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #145dbf;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eee;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .content {
+        padding: 1rem;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      .gallery img {
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>আমাদের বন্ধন</h1>
+    <p>স্মৃতির পাতায় জড়িয়ে থাকা কিছু মুহূর্ত</p>
+  </header>
+
+  <nav>
+    <a href="#">হোম</a>
+    <a href="#">আমাদের সম্পর্কে</a>
+    <a href="#">গ্যালারি</a>
+    <a href="#">যোগাযোগ</a>
+  </nav>
+
+  <div class="content">
+    <section>
+      <h2>আমাদের সম্পর্কে</h2>
+      <p>আমরা একসাথে অনেক স্মৃতি তৈরি করেছি—হাসি, কান্না, আনন্দ আর দুষ্টুমি। এই ওয়েবসাইটে সেই সুন্দর মুহূর্তগুলো সংরক্ষণ করা হয়েছে যেন আমরা সবসময় ফিরে তাকাতে পারি।</p>
+    </section>
+
+    <section>
+      <h2>স্মৃতির গ্যালারি</h2>
+      <div class="gallery">
+        <img src="https://via.placeholder.com/150" alt="Memory 1">
+        <img src="https://via.placeholder.com/150" alt="Memory 2">
+        <img src="https://via.placeholder.com/150" alt="Memory 3">
+        <img src="https://via.placeholder.com/150" alt="Memory 4">
+      </div>
+    </section>
+
+    <section>
+      <h2>যোগাযোগ</h2>
+      <form>
+        <input type="text" placeholder="তোমার নাম" required>
+        <input type="email" placeholder="ইমেইল" required>
+        <textarea rows="4" placeholder="তোমার বার্তা" required></textarea>
+        <button type="submit">পাঠাও</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    &copy; ২০২৫ - আমাদের বন্ধন | সব অধিকার সংরক্ষিত
+  </footer>
+</body>
+</html>
